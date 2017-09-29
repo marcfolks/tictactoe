@@ -8,10 +8,10 @@ end
 def available?(board,position)
      if board[position-1] == "x"|| board[position-1] == "o"
         false
-     else board[position<=1]||board[position>=10]
+     elsif board[position<=1]||board[position>=10]
         true
+     else available?(board,position)
      end
-     available?(board,position)
 end
 def players
     if player == 'x'

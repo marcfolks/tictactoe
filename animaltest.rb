@@ -12,4 +12,13 @@ def test_dog
     assert_equal("woof",dog_name.sound)
     assert_equal( "I am #{"Scruff"} #{"McGruff"} and my sound is #{"woof"}",dog_name.get_sound)
 end
+
+def test_duck
+    duck_name = Duck.new("first_name","last_name","qwak")
+    assert_equal("first_name",duck_name.first_name)
+    assert_
+
+end
+def test_area
+end
 end
